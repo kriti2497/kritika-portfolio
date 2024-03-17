@@ -1,0 +1,41 @@
+.details-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  @include breakpoint-up(large) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+  justify-items: center;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--text-primary);
+  padding: 20px;
+  align-items: center;
+
+  .detail-section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .detail-title {
+      font-size: 20px;
+      color: var(--text-secondary);
+    }
+    .detail-value {
+      font-size: 22px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 18px;
+      justify-content: space-between;
+      font-size: 32px;
+    }
+
+    .social-link {
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+  }
+}

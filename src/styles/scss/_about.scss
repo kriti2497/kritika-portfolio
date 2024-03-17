@@ -1,0 +1,25 @@
+.about-section {
+  padding: 30px;
+  @include breakpoint-up(large) {
+    padding: 30px 50px;
+  }
+  font-size: 18px;
+  background-color: var(--bg-secondary);
+  .inner-about {
+    background-color: var(--background);
+    color: var(--text-primary);
+    padding: 35px 45px;
+    border-radius: 15px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    // .about-me {
+    // }
+    .resume-actions {
+      justify-content: center;
+      display: flex;
+      gap: 20px;
+    }
+  }
+}

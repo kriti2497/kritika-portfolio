@@ -1,0 +1,62 @@
+.project {
+  background-color: var(--bg-secondary);
+  @include breakpoint-up(large) {
+    display: flex;
+    gap: 70px;
+    // align-items: center;
+    // margin: 0 40px;
+    // box-shadow: var(--box-shadow-one);
+  }
+
+  .project-img {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 20px;
+    img {
+      height: 250px;
+      border-radius: 12px;
+      transition: all 0.4s ease-in-out;
+      border: 5px solid transparent;
+      &:hover {
+        border: 5px solid var(--text-secondary);
+        transform: scale(1.05);
+        border-radius: 0;
+      }
+    }
+  }
+
+  .project-details {
+    flex: 1;
+    color: var(--text-primary);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .proj-title {
+      font-size: 28px;
+    }
+
+    @include breakpoint-up(large) {
+      margin: 0;
+    }
+
+    .tech {
+      display: flex;
+      gap: 16px;
+      .tech-stack {
+        color: var(--text-primary);
+        background-color: var(--background);
+        padding: 5px 20px;
+        box-shadow: var(--box-shadow-one);
+        border-radius: 2px;
+      }
+    }
+
+    .app-actions {
+      display: flex;
+      gap: 15px;
+    }
+  }
+}

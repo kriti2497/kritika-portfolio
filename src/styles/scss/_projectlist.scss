@@ -1,0 +1,10 @@
+.projects-section {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 40px;
+  .mt-0 {
+    margin: 0;
+  }
+}

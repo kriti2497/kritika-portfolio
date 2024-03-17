@@ -1,0 +1,22 @@
+.primary-button {
+  background-color: var(--button-bg-primary);
+  color: var(--button-bg-text-primary);
+  outline: none;
+  border: none;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  min-width: 100px;
+}
+
+.secondary-button {
+  background-color: var(--button-bg-secondary);
+  color: var(--button-bg-text-secondary);
+  // border: 2px solid var(--button-secondary-border);
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  min-width: 100px;
+}
