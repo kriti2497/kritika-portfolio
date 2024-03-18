@@ -14,7 +14,10 @@
     justify-content: center;
     padding: 20px;
     img {
-      height: 250px;
+      height: 180px;
+      @include breakpoint-up(large) {
+        height: 250px;
+      }
       border-radius: 12px;
       transition: all 0.4s ease-in-out;
       border: 5px solid transparent;
@@ -29,22 +32,23 @@
   .project-details {
     flex: 1;
     color: var(--text-primary);
-    padding: 30px 20px;
+    padding: 0 20px 25px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 
+    @include breakpoint-up(large) {
+      padding: 30px 20px;
+      margin: 0;
+    }
     .proj-title {
       font-size: 28px;
-    }
-
-    @include breakpoint-up(large) {
-      margin: 0;
     }
 
     .tech {
       display: flex;
       gap: 16px;
+      flex-wrap: wrap;
       .tech-stack {
         color: var(--text-primary);
         background-color: var(--background);
@@ -57,6 +61,11 @@
     .app-actions {
       display: flex;
       gap: 15px;
+      justify-content: center;
+
+      @include breakpoint-up(large) {
+        justify-content: flex-start;
+      }
     }
   }
 }

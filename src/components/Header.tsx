@@ -23,8 +23,6 @@ const Header = () => {
           ) : (
             <i className="fa-solid fa-sun icon-val"></i>
           )}
-
-          {theme === "light" ? "Dark Mode" : "Light Mode"}
         </span>
       </span>
     </header>

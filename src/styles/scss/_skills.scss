@@ -1,2 +1,36 @@
 .skills-div {
+  background-color: var(--bg-secondary);
+  padding: 25px 40px;
+
+  @include breakpoint-up(large) {
+    padding: 25px 100px;
+  }
+  .skill-list {
+    display: flex;
+    // padding-left: 50px;
+    // padding-right: 50px;
+
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      width: 120px;
+      @include breakpoint-up(large) {
+        width: 145px;
+      }
+    }
+
+    .skill-title {
+      color: var(--text-primary);
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+  }
+
+  .add-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

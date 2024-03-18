@@ -1,0 +1,24 @@
+.contact-div {
+  background-color: var(--background);
+  padding: 40px;
+
+  @include breakpoint-up(large) {
+    padding: 50px 100px;
+  }
+  .contact-values {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    .contact {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-primary);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

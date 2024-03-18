@@ -203,7 +203,7 @@ header .icon-val {
   color: var(--button-bg-text-primary);
   outline: none;
   border: none;
-  padding: 12px 14px;
+  padding: 12px 18px;
   border-radius: 10px;
   font-size: 14px;
   min-width: 100px;
@@ -212,7 +212,7 @@ header .icon-val {
 .secondary-button {
   background-color: var(--button-bg-secondary);
   color: var(--button-bg-text-secondary);
-  padding: 12px 14px;
+  padding: 12px 18px;
   border-radius: 10px;
   font-size: 14px;
   outline: none;
@@ -247,10 +247,15 @@ header .icon-val {
   padding: 20px;
 }
 .project .project-img img {
-  height: 250px;
+  height: 180px;
   border-radius: 12px;
   transition: all 0.4s ease-in-out;
   border: 5px solid transparent;
+}
+@media (min-width: 1024px) {
+  .project .project-img img {
+    height: 250px;
+  }
 }
 .project .project-img img:hover {
   border: 5px solid var(--text-secondary);
@@ -260,22 +265,24 @@ header .icon-val {
 .project .project-details {
   flex: 1;
   color: var(--text-primary);
-  padding: 30px 20px;
+  padding: 0 20px 25px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.project .project-details .proj-title {
-  font-size: 28px;
-}
 @media (min-width: 1024px) {
   .project .project-details {
+    padding: 30px 20px;
     margin: 0;
   }
+}
+.project .project-details .proj-title {
+  font-size: 28px;
 }
 .project .project-details .tech {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 .project .project-details .tech .tech-stack {
   color: var(--text-primary);
@@ -287,4 +294,70 @@ header .icon-val {
 .project .project-details .app-actions {
   display: flex;
   gap: 15px;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .project .project-details .app-actions {
+    justify-content: flex-start;
+  }
+}
+
+.skills-div {
+  background-color: var(--bg-secondary);
+  padding: 25px 40px;
+}
+@media (min-width: 1024px) {
+  .skills-div {
+    padding: 25px 100px;
+  }
+}
+.skills-div .skill-list {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills-div .skill-list img {
+  width: 120px;
+}
+@media (min-width: 1024px) {
+  .skills-div .skill-list img {
+    width: 145px;
+  }
+}
+.skills-div .skill-list .skill-title {
+  color: var(--text-primary);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.skills-div .add-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.contact-div {
+  background-color: var(--background);
+  padding: 40px;
+}
+@media (min-width: 1024px) {
+  .contact-div {
+    padding: 50px 100px;
+  }
+}
+.contact-div .contact-values {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.contact-div .contact-values .contact {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-primary);
+}
+.contact-div .contact-values a {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
