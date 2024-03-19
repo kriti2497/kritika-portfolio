@@ -19,8 +19,8 @@ const ProjectListing = () => {
       title: "Country Finder",
       image: Project1,
       projectDesc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
-      techStack: ["HTML", "SCSS", "React JS"],
+        "This app is all about exploring countries effortlessly. Browse through the listing page to discover details about each country. Click on any country card for a deep dive into its specifics. If you're looking for a specific country or capital—you can easily search for it. Plus, if you're interested in a particular region, just filter it out. You can also toggle between light and dark themes for whatever mood strikes you. Also, whether you're on your desktop or mobile, this app's got you covered because it is fully responsive. Check it out and start your global exploration today!",
+      techStack: ["SCSS", "React JS"],
       githubUrl: "https://github.com/kriti2497/country-finder",
       appUrl: "https://country-finder-ruby.vercel.app/",
     },
@@ -28,17 +28,17 @@ const ProjectListing = () => {
       title: "Chat App using Firebase",
       image: Project2,
       projectDesc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+        "Introducing a streamlined chat application powered by Firebase. It's a breeze to get started—simply register and login to begin connecting with others. Whether it's a one-on-one conversation or a group chat with friends, you have the flexibility to initiate discussions effortlessly. The platform offers a seamless user experience, allowing you to engage in meaningful conversations with ease. Utilizing Firebase ensures reliability and real-time updates, enhancing the overall chatting experience.",
       techStack: ["Next JS", "React MUI", "Firebase"],
       githubUrl: "https://github.com/kriti2497/mock-chat-app",
       appUrl: "https://mock-chat-app.vercel.app/",
     },
     {
-      title: "Easy Bank static website",
+      title: "Easy Bank landing page",
       image: Project3,
       projectDesc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
-      techStack: ["HTML", "SCSS", "React JS"],
+        "The Easy Bank landing page is a visually striking and user-friendly static webpage crafted with SCSS. Its sleek design seamlessly adapts to different screen sizes, ensuring an optimal viewing experience across devices.",
+      techStack: ["SCSS", "React JS"],
       githubUrl: "https://github.com/kriti2497/easy-bank",
       appUrl: "https://easy-bank-hazel-eight.vercel.app/",
     },
@@ -46,8 +46,8 @@ const ProjectListing = () => {
       title: "Music Cafe",
       image: Project4,
       projectDesc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
-      techStack: ["HTML", "Tailwind", "React JS"],
+        "Introducing Music Cafe, your go-to spot for music discovery and enjoyment. Think of it as your very own Spotify clone, offering a seamless experience for exploring artists and their music. With Music Cafe, you can dive deep into the world of music by searching for your favorite artists and accessing their entire song catalog. But that's not all—Music Cafe lets you preview songs with ease, allowing you to play snippets to get a taste of each track. Whether you're in the mood for a quick listen or ready to groove, you have the power to play, pause, and control your music experience.",
+      techStack: ["Tailwind", "React JS"],
       githubUrl: "https://github.com/kriti2497/music-cafe",
       appUrl: "https://music-cafe-sable.vercel.app/",
     },
@@ -55,14 +55,14 @@ const ProjectListing = () => {
       title: "Age Calculator",
       image: Project5,
       projectDesc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
-      techStack: ["HTML", "Tailwind", "Next JS"],
+        "Introducing our Age Calculator app—a handy tool that precisely calculates your age in years, months, and days. With a sleek and intuitive interface, simply input your birthdate, and let the app do the rest. It instantly generates accurate results, breaking down your age into easily digestible units, giving you a comprehensive understanding of your time on this planet.",
+      techStack: ["Tailwind", "Next JS"],
       githubUrl: "https://github.com/kriti2497/age-calculator",
       appUrl: "https://age-calculator-ecru-six.vercel.app/",
     },
   ];
   return (
-    <div className="projects-section">
+    <div className="projects-section main-container">
       <div className="head-title mt-0">My Projects</div>
       {projectDetails.map((project: IProject) => (
         <ProjectDetail key={project.title} project={project} />

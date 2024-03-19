@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import ResumePdf from "../assets/docs/Resume of Kritika Bandekar.pdf";
 
 const Contact = () => {
   return (
-    <div className="contact-div">
+    <div className="contact-div main-container">
       <div className="head-title">Contact Me</div>
       <div className="contact-values">
         <div className="contact">
@@ -11,7 +12,7 @@ const Contact = () => {
         </div>
         <div className="contact">
           <i className="fa-solid fa-phone"></i>
-          <p>+91 8806454970</p>
+          <p>+918806454970</p>
         </div>
         <a
           href={ResumePdf}

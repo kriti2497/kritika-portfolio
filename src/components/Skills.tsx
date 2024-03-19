@@ -88,7 +88,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="skills-div">
+    <div className="skills-div main-container">
       <div className="head-title">My Skills</div>
       <div className="skill-list">
         {imgList.map((eachImg: any) => (

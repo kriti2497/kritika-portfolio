@@ -12,6 +12,11 @@
   margin-bottom: 15px;
 }
 
+.main-container {
+  max-width: 1500px;
+  margin: auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -46,7 +51,7 @@ header .icon-val {
 }
 
 .hero {
-  padding: 40px 50px;
+  padding: 40px 50px 65px;
   background-color: var(--bg-secondary);
   display: grid;
   grid-template-columns: 1fr;
@@ -54,7 +59,7 @@ header .icon-val {
 }
 @media (min-width: 1024px) {
   .hero {
-    padding: 40px 100px;
+    padding: 40px 100px 0;
     height: 50vh;
     grid-template-columns: 2fr 1fr;
     align-items: center;
@@ -82,21 +87,26 @@ header .icon-val {
   }
 }
 .hero .name-section .inner-typing-wrapper {
+  margin-top: 10px;
+  position: absolute;
   font-weight: 700;
-  width: calc(100vw - 100px);
-  font-size: 32px;
+  font-size: 30px;
   color: var(--text-primary);
-  white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  animation: typing 2s steps(16), blink 0.5s infinite alternate;
+  animation: blink 0.5s infinite alternate;
 }
 @media (min-width: 1024px) {
   .hero .name-section .inner-typing-wrapper {
-    position: absolute;
-    width: calc(60vw - 100px);
     font-size: 65px;
+    margin: 0;
+  }
+}
+@media (min-width: 640px) {
+  .hero .name-section .inner-typing-wrapper {
+    font-size: 52px;
+    margin: 0;
   }
 }
 .hero .profile-pic {
@@ -109,7 +119,6 @@ header .icon-val {
 }
 .hero .profile-pic img {
   height: 375px;
-  width: 300px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -207,6 +216,7 @@ header .icon-val {
   border-radius: 10px;
   font-size: 14px;
   min-width: 100px;
+  cursor: pointer;
 }
 
 .secondary-button {
@@ -218,6 +228,7 @@ header .icon-val {
   outline: none;
   border: none;
   min-width: 100px;
+  cursor: pointer;
 }
 
 .projects-section {
@@ -319,6 +330,7 @@ header .icon-val {
 }
 .skills-div .skill-list img {
   width: 120px;
+  filter: var(--drop-shadow);
 }
 @media (min-width: 1024px) {
   .skills-div .skill-list img {

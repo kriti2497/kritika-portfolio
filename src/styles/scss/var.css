@@ -11,6 +11,7 @@
   --button-bg-text-primary: #ffffff;
   --button-bg-text-secondary: #2e3f6f;
   --button-secondary-border: #2e3f6f;
+  --drop-shadow: drop-shadow(5px 5px 5px #535050);
 }
 
 [data-theme="light"] {
@@ -26,6 +27,7 @@
   --button-bg-text-primary: #ffffff;
   --button-bg-text-secondary: white;
   --button-secondary-border: #333333;
+  --drop-shadow: drop-shadow(5px 5px 5px #535050);
 
   /* #002231
     #4ec6e1 */

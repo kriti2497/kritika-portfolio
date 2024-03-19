@@ -1,20 +1,17 @@
 import PrimaryButton from "./PrimaryButton";
 import ResumePdf from "../assets/docs/Resume of Kritika Bandekar.pdf";
-import SecondaryButton from "./SecondaryButton";
+// import SecondaryButton from "./SecondaryButton";
 
 const AboutMe = () => {
   return (
-    <div className="about-section">
+    <div className="about-section main-container">
       <div className="head-title">About Me</div>
       <div className="inner-about">
         <div className="about-me">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages
+          Hey there! 👋 I'm a frontend developer with 4+ years of experience
+          crafting awesome web apps. I love building robust applications with
+          responsive components using ReactJS and Angular. Besides coding, I
+          also like drawing and sketching. 👩🏻‍🎨
         </div>
         <div className="resume-actions">
           <a
@@ -25,9 +22,9 @@ const AboutMe = () => {
           >
             <PrimaryButton title="Download Resume" />
           </a>
-          <a href={"/"}>
+          {/* <a href={"/"}>
             <SecondaryButton title="View Resume" />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

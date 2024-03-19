@@ -7,16 +7,17 @@
   border-radius: 10px;
   font-size: 14px;
   min-width: 100px;
+  cursor: pointer;
 }
 
 .secondary-button {
   background-color: var(--button-bg-secondary);
   color: var(--button-bg-text-secondary);
-  // border: 2px solid var(--button-secondary-border);
   padding: 12px 18px;
   border-radius: 10px;
   font-size: 14px;
   outline: none;
   border: none;
   min-width: 100px;
+  cursor: pointer;
 }

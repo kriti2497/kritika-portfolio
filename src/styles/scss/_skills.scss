@@ -7,14 +7,13 @@
   }
   .skill-list {
     display: flex;
-    // padding-left: 50px;
-    // padding-right: 50px;
 
     gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
     img {
       width: 120px;
+      filter: var(--drop-shadow);
       @include breakpoint-up(large) {
         width: 145px;
       }

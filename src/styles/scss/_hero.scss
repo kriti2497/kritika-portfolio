@@ -1,11 +1,11 @@
 .hero {
-  padding: 40px 50px;
+  padding: 40px 50px 65px;
   background-color: var(--bg-secondary);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   @include breakpoint-up(large) {
-    padding: 40px 100px;
+    padding: 40px 100px 0;
     height: 50vh;
     grid-template-columns: 2fr 1fr;
     align-items: center;
@@ -28,31 +28,24 @@
     }
     .inner-typing-wrapper {
       @include breakpoint-up(large) {
-        position: absolute;
-        width: calc(60vw - 100px);
         font-size: 65px;
+        margin: 0;
       }
+      @include breakpoint-up(medium) {
+        font-size: 52px;
+        margin: 0;
+      }
+      margin-top: 10px;
+      position: absolute;
       font-weight: 700;
-      width: calc(100vw - 100px);
-      font-size: 32px;
+      font-size: 30px;
       color: var(--text-primary);
-      white-space: nowrap;
+      // white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
       font-family: monospace;
-      animation: typing 2s steps(16), blink 0.5s infinite alternate;
+      animation: blink 0.5s infinite alternate;
     }
-    // .fname {
-    //   width: 8.5rem;
-    //   animation: typing1 2s steps(7), blink 0.5s none alternate;
-    // }
-
-    // .lname {
-    //   overflow: hidden;
-    //   width: 9.5rem;
-    //   animation: typing2 2s steps(8), blink 0.5s step-end alternate;
-    //   animation-delay: 2s;
-    // }
   }
 
   .profile-pic {
@@ -63,7 +56,7 @@
     img {
       // filter: drop-shadow(30px 10px 4px #c4a5b3);
       height: 375px;
-      width: 300px;
+      // width: 300px;
       object-fit: contain;
     }
   }

@@ -1,11 +1,28 @@
+import { useEffect, useState } from "react";
+
 import KritikaProfile from "../assets/images/kritikabandekar.png";
 
 const Hero = () => {
+  const text = "KRITIKA BANDEKAR";
+  const [nameText, setNameText] = useState("");
+  const [nameIndex, setNameIndex] = useState(0);
+  useEffect(() => {
+    if (nameIndex < text.length) {
+      const timeout = setTimeout(() => {
+        setNameText((prevText: string) => prevText + text[nameIndex]);
+        setNameIndex((prevIndex: number) => prevIndex + 1);
+      }, 100);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [nameIndex]);
+
   return (
-    <div className="hero">
+    <div className="hero main-container">
       <div className="name-section">
         <p>SOFTWARE DEVELOPER</p>
-        <div className="inner-typing-wrapper">KRITIKA BANDEKAR</div>
+        {/* className="inner-typing-wrapper" */}
+        <div className="inner-typing-wrapper">{nameText}</div>
       </div>
       <div className="profile-pic">
         <img src={KritikaProfile} alt="kritikab" />

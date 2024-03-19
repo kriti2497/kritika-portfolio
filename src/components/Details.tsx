@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Details = () => {
   return (
-    <div className="details-div">
+    <div className="details-div main-container">
       <div className="detail-section">
         <p className="detail-title">Where am I from?</p>
         <p className="detail-value">Goa, India</p>
