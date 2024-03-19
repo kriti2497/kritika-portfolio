@@ -51,7 +51,7 @@ header .icon-val {
 }
 
 .hero {
-  padding: 40px 50px 65px;
+  padding: 40px 40px 65px;
   background-color: var(--bg-secondary);
   display: grid;
   grid-template-columns: 1fr;
