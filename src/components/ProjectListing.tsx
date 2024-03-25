@@ -4,7 +4,9 @@ import Project2 from "../assets/docs/project-thumbnails/chat-app.png";
 import Project3 from "../assets/docs/project-thumbnails/easy-bank.png";
 import Project4 from "../assets/docs/project-thumbnails/music-cafe.png";
 import Project5 from "../assets/docs/project-thumbnails/age-calculator.png";
+import Project6 from "../assets/docs/project-thumbnails/url-shortener.png";
 import ProjectDetail from "./ProjectDetail";
+
 export interface IProject {
   title: string;
   image: any;
@@ -59,6 +61,15 @@ const ProjectListing = () => {
       techStack: ["Tailwind", "Next JS"],
       githubUrl: "https://github.com/kriti2497/age-calculator",
       appUrl: "https://age-calculator-ecru-six.vercel.app/",
+    },
+    {
+      title: "URL Shortener",
+      image: Project6,
+      projectDesc:
+        "A URL shortening project from Frontend Mentor, where I dedicated my efforts to crafting the backend API with Express.js. This application not only facilitates the conversion of long URLs into shortened ones but also includes a convenient copy URL functionality. This feature enhances user experience by providing seamless access to shortened links with just a click.",
+      techStack: ["Tailwind", "Next JS", "Express JS"],
+      githubUrl: "https://github.com/kriti2497/url-shortener",
+      appUrl: "https://url-shortener-blush-delta.vercel.app/",
     },
   ];
   return (
