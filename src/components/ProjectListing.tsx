@@ -36,6 +36,15 @@ const ProjectListing = () => {
       appUrl: "https://mock-chat-app.vercel.app/",
     },
     {
+      title: "URL Shortener",
+      image: Project6,
+      projectDesc:
+        "A URL shortening project from Frontend Mentor, where I dedicated my efforts to crafting the backend API with Express.js. This application not only facilitates the conversion of long URLs into shortened ones but also includes a convenient copy URL functionality. This feature enhances user experience by providing seamless access to shortened links with just a click.",
+      techStack: ["Tailwind", "Next JS", "Express JS"],
+      githubUrl: "https://github.com/kriti2497/url-shortener",
+      appUrl: "https://url-shortener-blush-delta.vercel.app/",
+    },
+    {
       title: "Easy Bank landing page",
       image: Project3,
       projectDesc:
@@ -61,15 +70,6 @@ const ProjectListing = () => {
       techStack: ["Tailwind", "Next JS"],
       githubUrl: "https://github.com/kriti2497/age-calculator",
       appUrl: "https://age-calculator-ecru-six.vercel.app/",
-    },
-    {
-      title: "URL Shortener",
-      image: Project6,
-      projectDesc:
-        "A URL shortening project from Frontend Mentor, where I dedicated my efforts to crafting the backend API with Express.js. This application not only facilitates the conversion of long URLs into shortened ones but also includes a convenient copy URL functionality. This feature enhances user experience by providing seamless access to shortened links with just a click.",
-      techStack: ["Tailwind", "Next JS", "Express JS"],
-      githubUrl: "https://github.com/kriti2497/url-shortener",
-      appUrl: "https://url-shortener-blush-delta.vercel.app/",
     },
   ];
   return (
