@@ -5,6 +5,7 @@ import React from "react";
 import SecondaryButton from "./SecondaryButton";
 
 const ProjectDetail: React.FC<{ project: IProject }> = ({ project }) => {
+  // const [seeMore, setSeeMore] = useState(false);
   const { title, image, projectDesc, techStack, githubUrl, appUrl } = project;
   return (
     <div className="project">
@@ -15,7 +16,13 @@ const ProjectDetail: React.FC<{ project: IProject }> = ({ project }) => {
       </div>
       <div className="project-details">
         <p className="proj-title">{title}</p>
-        <p>{projectDesc}</p>
+        <p>
+          {projectDesc}
+          {/* {projectDesc.slice(0, seeMore ? projectDesc.length : 100)}{" "}
+          <span className="see-more-less" onClick={() => setSeeMore(!seeMore)}>
+            {seeMore ? "See more.." : "See less.."}
+          </span>{" "} */}
+        </p>
         <div className="tech">
           {techStack.map((tech: string) => (
             <span className="tech-stack" key={tech}>

@@ -59,7 +59,7 @@ header .icon-val {
 }
 @media (min-width: 1024px) {
   .hero {
-    padding: 40px 100px 0;
+    padding: 30px 100px;
     height: 50vh;
     grid-template-columns: 2fr 1fr;
     align-items: center;
@@ -96,17 +96,18 @@ header .icon-val {
   border-right: 3px solid;
   font-family: monospace;
   animation: blink 0.5s infinite alternate;
+  left: 2%;
 }
 @media (min-width: 1024px) {
   .hero .name-section .inner-typing-wrapper {
     font-size: 65px;
-    margin: 0;
   }
 }
 @media (min-width: 640px) {
   .hero .name-section .inner-typing-wrapper {
     font-size: 52px;
     margin: 0;
+    left: unset;
   }
 }
 .hero .profile-pic {
@@ -118,9 +119,11 @@ header .icon-val {
   }
 }
 .hero .profile-pic img {
-  height: 375px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 275px;
+  width: 275px;
+  border-radius: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hero .brief-details {
   color: var(--text-primary);

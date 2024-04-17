@@ -5,7 +5,7 @@
   grid-template-columns: 1fr;
   justify-items: center;
   @include breakpoint-up(large) {
-    padding: 40px 100px 0;
+    padding: 30px 100px;
     height: 50vh;
     grid-template-columns: 2fr 1fr;
     align-items: center;
@@ -29,11 +29,11 @@
     .inner-typing-wrapper {
       @include breakpoint-up(large) {
         font-size: 65px;
-        margin: 0;
       }
       @include breakpoint-up(medium) {
         font-size: 52px;
         margin: 0;
+        left: unset;
       }
       margin-top: 10px;
       position: absolute;
@@ -45,6 +45,7 @@
       border-right: 3px solid;
       font-family: monospace;
       animation: blink 0.5s infinite alternate;
+      left: 2%;
     }
   }
 
@@ -54,10 +55,10 @@
       order: 2;
     }
     img {
-      // filter: drop-shadow(30px 10px 4px #c4a5b3);
-      height: 375px;
-      // width: 300px;
-      object-fit: contain;
+      height: 275px;
+      width: 275px;
+      border-radius: 100vh;
+      object-fit: cover;
     }
   }
 

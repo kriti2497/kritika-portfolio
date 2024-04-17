@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import KritikaProfile from "../assets/images/kritikabandekar.png";
+import KritikaProfile from "../assets/images/Kritika_Bandekar.jpg";
 
 const Hero = () => {
   const text = "KRITIKA BANDEKAR";
