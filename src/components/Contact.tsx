@@ -10,10 +10,6 @@ const Contact = () => {
           <i className="fa-solid fa-envelope"></i>
           <p>kritikabandekar24@gmail.com</p>
         </div>
-        <div className="contact">
-          <i className="fa-solid fa-phone"></i>
-          <p>+918806454970</p>
-        </div>
         <a
           href={ResumePdf}
           download="Resume-Kritika-Bandekar"
