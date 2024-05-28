@@ -260,18 +260,33 @@ header .icon-val {
   justify-content: center;
   padding: 20px;
 }
-.project .project-img img {
+.project .project-img .img-container {
+  position: relative;
+}
+.project .project-img .in-progress-tag {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px 12px;
+  border: 2px solid;
+}
+.project .project-img .in-progress-tag img {
+  height: 32px;
+}
+.project .project-img .project-img-detail {
   height: 180px;
   border-radius: 12px;
   transition: all 0.4s ease-in-out;
   border: 5px solid transparent;
 }
 @media (min-width: 1024px) {
-  .project .project-img img {
+  .project .project-img .project-img-detail {
     height: 250px;
   }
 }
-.project .project-img img:hover {
+.project .project-img .project-img-detail:hover {
   border: 5px solid var(--text-secondary);
   transform: scale(1.05);
   border-radius: 0;
@@ -292,6 +307,10 @@ header .icon-val {
 }
 .project .project-details .proj-title {
   font-size: 28px;
+}
+.project .project-details .proj-in-progress {
+  font-size: 22px;
+  margin: -15px 0;
 }
 .project .project-details .tech {
   display: flex;

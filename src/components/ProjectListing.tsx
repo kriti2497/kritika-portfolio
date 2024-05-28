@@ -5,6 +5,7 @@ import Project3 from "../assets/docs/project-thumbnails/easy-bank.png";
 import Project4 from "../assets/docs/project-thumbnails/music-cafe.png";
 import Project5 from "../assets/docs/project-thumbnails/age-calculator.png";
 import Project6 from "../assets/docs/project-thumbnails/url-shortener.png";
+import Project7 from "../assets/docs/project-thumbnails/kanban-board-basic.png";
 import ProjectDetail from "./ProjectDetail";
 
 export interface IProject {
@@ -14,6 +15,7 @@ export interface IProject {
   techStack: string[];
   githubUrl: string;
   appUrl: string;
+  status: "todo" | "done" | "in-progress";
 }
 const ProjectListing = () => {
   const projectDetails: IProject[] = [
@@ -25,6 +27,7 @@ const ProjectListing = () => {
       techStack: ["SCSS", "React JS"],
       githubUrl: "https://github.com/kriti2497/country-finder",
       appUrl: "https://country-finder-ruby.vercel.app/",
+      status: "done",
     },
     {
       title: "Chat App using Firebase",
@@ -34,6 +37,7 @@ const ProjectListing = () => {
       techStack: ["Next JS", "React MUI", "Firebase"],
       githubUrl: "https://github.com/kriti2497/mock-chat-app",
       appUrl: "https://mock-chat-app.vercel.app/",
+      status: "done",
     },
     {
       title: "URL Shortener",
@@ -43,6 +47,7 @@ const ProjectListing = () => {
       techStack: ["Tailwind", "Next JS", "Express JS"],
       githubUrl: "https://github.com/kriti2497/url-shortener",
       appUrl: "https://url-shortener-blush-delta.vercel.app/",
+      status: "done",
     },
     {
       title: "Easy Bank landing page",
@@ -52,6 +57,7 @@ const ProjectListing = () => {
       techStack: ["SCSS", "React JS"],
       githubUrl: "https://github.com/kriti2497/easy-bank",
       appUrl: "https://easy-bank-hazel-eight.vercel.app/",
+      status: "done",
     },
     {
       title: "Music Cafe",
@@ -61,6 +67,7 @@ const ProjectListing = () => {
       techStack: ["Tailwind", "React JS"],
       githubUrl: "https://github.com/kriti2497/music-cafe",
       appUrl: "https://music-cafe-sable.vercel.app/",
+      status: "done",
     },
     {
       title: "Age Calculator",
@@ -70,6 +77,17 @@ const ProjectListing = () => {
       techStack: ["Tailwind", "Next JS"],
       githubUrl: "https://github.com/kriti2497/age-calculator",
       appUrl: "https://age-calculator-ecru-six.vercel.app/",
+      status: "done",
+    },
+    {
+      title: "Basic Kanban Board",
+      image: Project7,
+      projectDesc:
+        "The Basic Kanban Board (Work in Progress) is a simple yet effective project management tool for organizing tasks. Users can create tasks, move them between stages (To-Do, In Progress, Completed), and delete them as needed. It enhances productivity by providing a clear visual of task progress. Ideal for individuals and small teams, this board helps streamline workflow and maintain focus on priorities. ",
+      techStack: ["Tailwind", "React JS"],
+      githubUrl: "https://github.com/kriti2497/kanban-board",
+      appUrl: "https://kanban-board-tau-three.vercel.app/",
+      status: "in-progress",
     },
   ];
   return (
