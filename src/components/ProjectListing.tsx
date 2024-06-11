@@ -89,6 +89,16 @@ const ProjectListing = () => {
       appUrl: "https://kanban-board-tau-three.vercel.app/",
       status: "in-progress",
     },
+    {
+      title: "Basic Todo App",
+      image: Project7,
+      projectDesc:
+        "The Basic Todo App (Work in Progress) will allow you to create your own todo list. You can add any task, update and also delete them. ",
+      techStack: ["Tailwind", "Next JS", "Express JS"],
+      githubUrl: "https://github.com/kriti2497/todo-frontend",
+      appUrl: "https://todo-frontend-chi-two.vercel.app/",
+      status: "in-progress",
+    },
   ];
   return (
     <div className="projects-section main-container">
