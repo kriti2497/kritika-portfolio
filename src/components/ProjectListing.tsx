@@ -6,6 +6,8 @@ import Project4 from "../assets/docs/project-thumbnails/music-cafe.png";
 import Project5 from "../assets/docs/project-thumbnails/age-calculator.png";
 import Project6 from "../assets/docs/project-thumbnails/url-shortener.png";
 import Project7 from "../assets/docs/project-thumbnails/kanban-board-basic.png";
+import Project8 from "../assets/docs/project-thumbnails/basic-todo-app.png";
+import Project9 from "../assets/docs/project-thumbnails/url-shotener-nextjs.png";
 import ProjectDetail from "./ProjectDetail";
 
 export interface IProject {
@@ -91,13 +93,23 @@ const ProjectListing = () => {
     },
     {
       title: "Basic Todo App",
-      image: Project7,
+      image: Project8,
       projectDesc:
         "The Basic Todo App (Work in Progress) will allow you to create your own todo list. You can add any task, update and also delete them. ",
       techStack: ["Tailwind", "Next JS", "Express JS"],
       githubUrl: "https://github.com/kriti2497/todo-frontend",
       appUrl: "https://todo-frontend-chi-two.vercel.app/",
       status: "in-progress",
+    },
+    {
+      title: "URL Shortener using Next.js for BE and FE",
+      image: Project9,
+      projectDesc:
+        "A URL shortening project from Frontend Mentor, where I dedicated my efforts to crafting the backend and frontend using Next.js. This application not only facilitates the conversion of long URLs into shortened ones but also includes a convenient copy URL functionality. This feature enhances user experience by providing seamless access to shortened links with just a click.",
+      techStack: ["Tailwind", "Next JS"],
+      githubUrl: "https://github.com/kriti2497/url-shortener-nextjs",
+      appUrl: "https://short-link-nextjs.vercel.app/",
+      status: "done",
     },
   ];
   return (
