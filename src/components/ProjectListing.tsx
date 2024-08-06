@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Project1 from "../assets/docs/project-thumbnails/country-finder.png";
+import Project10 from "../assets/docs/project-thumbnails/quiz-it-up.png";
 import Project2 from "../assets/docs/project-thumbnails/chat-app.png";
 import Project3 from "../assets/docs/project-thumbnails/easy-bank.png";
 import Project4 from "../assets/docs/project-thumbnails/music-cafe.png";
@@ -109,6 +110,16 @@ const ProjectListing = () => {
       techStack: ["Tailwind", "Next JS"],
       githubUrl: "https://github.com/kriti2497/url-shortener-nextjs",
       appUrl: "https://short-link-nextjs.vercel.app/",
+      status: "done",
+    },
+    {
+      title: "Quiz it Up",
+      image: Project10,
+      projectDesc:
+        "A basic quiz app to test your knowledge. Take the test to know how you fare. Stay tuned till the end to check your score. This app uses Tailwind.",
+      techStack: ["Tailwind", "React JS"],
+      githubUrl: "https://github.com/kriti2497",
+      appUrl: "https://quiz-app-swart-ten.vercel.app/",
       status: "done",
     },
   ];
