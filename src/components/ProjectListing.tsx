@@ -116,7 +116,7 @@ const ProjectListing = () => {
       title: "Quiz it Up",
       image: Project10,
       projectDesc:
-        "A basic quiz app to test your knowledge. Take the test to know how you fare. Stay tuned till the end to check your score. This app uses Tailwind.",
+        "A simple quiz app to assess your knowledge. Take the quiz to see how well you do. Stay until the end to view your score. This app is built with React JS and Tailwind CSS.",
       techStack: ["Tailwind", "React JS"],
       githubUrl: "https://github.com/kriti2497",
       appUrl: "https://quiz-app-swart-ten.vercel.app/",
