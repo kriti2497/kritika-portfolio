@@ -9,7 +9,7 @@ const Details = () => {
       </div>
       <div className="detail-section">
         <p className="detail-title">Experience</p>
-        <p className="detail-value">4 Years 11 Months</p>
+        <p className="detail-value">5 Years 1 Month</p>
       </div>
       <div className="detail-section">
         <p className="detail-title">My Socials</p>
